@@ -336,7 +336,6 @@
   font-size: 14px;
   line-height: 90%;
   font-weight: var(--text-weight);
-  background-color: transparent;
   border: 2px solid var(--accent-color);
   flex-direction: column;
   gap: 9px;
