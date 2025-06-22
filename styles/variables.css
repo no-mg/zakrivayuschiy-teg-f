@@ -8,8 +8,9 @@
   --accent-color: #000;
   --content-width: clamp(23.438rem, 16.285rem + 30.516vw, 43.75rem);
   --logo-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
-  --title-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);;
+  --title-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   --header-padding: clamp(7.5rem, 7.25rem + 1.071vw, 8rem);
   --contour-color: #000;
   --animation-fill-color: #FF0000;
+  
 }

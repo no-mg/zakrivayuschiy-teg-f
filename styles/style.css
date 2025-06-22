@@ -43,7 +43,6 @@
   display: flex;
   width: var(--content-width);
   padding: var(--header-padding) 0;
-  gap: var(--gap);
   margin: 100px 0;
   font-family: var(--accent-font);
   flex-direction: column;
@@ -52,7 +51,6 @@
   justify-content: center;
   border: 2px solid black;
   background-color: white;
-  width: 100%;
 }
 
 .header__logo {
@@ -82,7 +80,8 @@
 
 .card__title {
   font-size: 18px;
-  font-weight: var(--title-weight);
+  font-family: var(--main-font);
+  font-variation-settings: 'wght' var(--title-weight);
   padding: 6px 10px 4px 10px;
   display: flex;
   flex-direction: column;
@@ -168,7 +167,8 @@
   gap: 27px;
   font-size: 18px;
   line-height: 21px;
-  font-weight: var(--text-weight);
+  font-family: var(--main-font);
+  font-variation-settings: 'wght' var(--text-weight);
   padding-bottom: 25px;
 }
 
@@ -336,7 +336,6 @@
   font-size: 14px;
   line-height: 90%;
   font-weight: var(--text-weight);
-  margin: 0 auto;
   background-color: transparent;
   border: 2px solid var(--accent-color);
   flex-direction: column;
