@@ -196,6 +196,7 @@
   transition: box-shadow 0.3s ease;
   background-color: transparent;
   cursor: pointer;
+  border: 2px solid black;
 }
 
 .button:focus {
@@ -278,7 +279,6 @@
   padding: 31px 40px 30px 40px;
   gap: 30px;
   position: fixed;
-  min-height: 195px;
   min-width: 341px;
   max-width: 357px;
 }
