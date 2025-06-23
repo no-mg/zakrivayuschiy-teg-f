@@ -9,3 +9,79 @@
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
 */
+
+.like-icon .core {
+  fill: transparent;
+  transition: fill 0.3s;
+  transition-delay: 0.03s;
+}
+
+.like-icon:hover .core {
+  fill: var(--contour-color);
+  transition: fill 0.3s;
+  transition-delay: 0s;
+}
+
+.like-icon .main-body {
+  fill: transparent;
+  transition: fill 0.3s;
+  transition-delay: 0;
+}
+
+.like-icon:hover .main-body {
+  fill: var(--contour-color);
+  transition: fill 0.3s;
+  transition-delay: 0.05s;
+}
+
+.like-icon:active .core,
+.like-icon.is-liked .core {
+  fill: var(--animation-fill-color);
+  transition: fill 0.3s;
+  transition-delay: 0;
+}
+
+.like-icon:active .main-body,
+.like-icon.is-liked .main-body {
+  fill: var(--animation-fill-color);
+  transition: fill 0.3s;
+  transition-delay: 0.05s;
+}
+
+.like-icon.is-liked .contour {
+  fill: var(--animation-fill-color);
+  transition: fill 0.3s;
+  transition-delay: 0.06s;
+}
+
+.like-icon.is-liked .heart {
+  animation: heart-scale 0.3s 0.1s ease-in 1 alternate;
+  transform-origin: center;
+}
+
+.like-icon.is-liked .sparks {
+  animation: sparks-opacity 0.3s 0.3s ease-in 1 alternate;
+}
+
+
+.like-icon .contour {
+  transition: fill 0.1s linear;
+}
+
+@keyframes heart-scale {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.25);
+  }
+}
+
+@keyframes sparks-opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
